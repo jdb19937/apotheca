@@ -1,0 +1,26 @@
+omnia:
+	face -C face omnia
+	face -C ison omnia
+	face -C ddiff omnia
+	face -C ison omnia
+	face -C munda omnia
+	face -C insinulint omnia
+
+purga:
+	face -C face purga
+	face -C ison purga
+	face -C ddiff purga
+	face -C ison purga
+	face -C insinulint purga
+	face -C munda purga_omnia # nepotesque
+
+para:
+	git submodule update --init --recursive
+
+trahe:
+	git submodule update --remote
+
+firma:
+	git submodule update
+
+.PHONY: omnia purga omnia_purga trahe firma para
