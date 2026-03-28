@@ -28,6 +28,7 @@ fige:
 
 signa:
 	@test -n "$(TAG)" || { echo "TAG non datus est"; exit 1; }
+	@git diff --quiet && git diff --cached --quiet || { echo "mutationes non committuntur"; exit 1; }
 	@for d in $(OMNIA); do \
 		tag=$$(cd $$d && git describe --exact-match --tags 2>/dev/null) || \
 		{ echo "$$d non ad signum fixum est"; exit 1; }; \
