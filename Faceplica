@@ -1,18 +1,13 @@
+NUDA = crispus ddiff face insinulint ison
+OMNIA = $(NUDA) munda
+
 omnia:
-	face -C face omnia
-	face -C ison omnia
-	face -C ddiff omnia
-	face -C ison omnia
+	@for d in $(NUDA); do face -C $$d omnia; done
 	face -C munda omnia
-	face -C insinulint omnia
 
 purga:
-	face -C face purga
-	face -C ison purga
-	face -C ddiff purga
-	face -C ison purga
-	face -C insinulint purga
-	face -C munda purga_omnia # nepotesque
+	@for d in $(NUDA); do face -C $$d purga; done
+	face -C munda purga_omnia
 
 para:
 	git submodule update --init --recursive
@@ -23,4 +18,21 @@ trahe:
 firma:
 	git submodule update
 
-.PHONY: omnia purga omnia_purga trahe firma para
+fige:
+	@for d in $(OMNIA); do \
+		tag=$$(cd $$d && git describe --tags --abbrev=0 $$(cd $$d && git rev-list --tags --max-count=1) 2>/dev/null) || \
+		{ echo "$$d: nullum signum"; exit 1; }; \
+		echo "$$d: $$tag"; \
+		(cd $$d && git checkout $$tag); \
+	done
+
+signa:
+	@test -n "$(TAG)" || { echo "TAG non datus est"; exit 1; }
+	@for d in $(OMNIA); do \
+		tag=$$(cd $$d && git describe --exact-match --tags 2>/dev/null) || \
+		{ echo "$$d non ad signum fixum est"; exit 1; }; \
+		echo "$$d: $$tag"; \
+	done
+	git tag $(TAG)
+
+.PHONY: omnia purga omnia_purga trahe firma para fige signa
