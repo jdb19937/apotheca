@@ -1,0 +1,18 @@
+[submodule "ison"]
+	path = ison
+	url = git@github.com:jdb19937/ison.git
+[submodule "crispus"]
+	path = crispus
+	url = git@github.com:jdb19937/crispus.git
+[submodule "face"]
+	path = face
+	url = git@github.com:jdb19937/face.git
+[submodule "ddiff"]
+	path = ddiff
+	url = git@github.com:jdb19937/ddiff.git
+[submodule "munda"]
+	path = munda
+	url = git@github.com:jdb19937/munda.git
+[submodule "insinulint"]
+	path = insinulint
+	url = git@github.com:jdb19937/insinulint.git
