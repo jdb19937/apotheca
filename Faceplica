@@ -13,17 +13,19 @@ para:
 	git submodule update --init --recursive
 
 trahe:
-	git submodule update --remote
+	@for d in $(OMNIA); do \
+		git -C $$d checkout main && git -C $$d pull; \
+	done
 
 firma:
 	git submodule update
 
 fige:
 	@for d in $(OMNIA); do \
-		tag=$$(cd $$d && git describe --tags --abbrev=0 $$(cd $$d && git rev-list --tags --max-count=1) 2>/dev/null) || \
+		tag=$$(git -C $$d describe --tags --abbrev=0 $$(git -C $$d rev-list --tags --max-count=1) 2>/dev/null) || \
 		{ echo "$$d: nullum signum"; exit 1; }; \
 		echo "$$d: $$tag"; \
-		(cd $$d && git checkout $$tag); \
+		git -C $$d checkout $$tag; \
 	done
 
 signa:
