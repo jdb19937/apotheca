@@ -3,7 +3,7 @@ OMNIA = $(NUDA) munda
 
 omnia:
 	@for d in $(NUDA); do $(FACE) -C $$d omnia; done
-	$(FACE) -C munda omnia
+	$(FACE) -C munda omnia APOTHECA=$(CURDIR)
 
 purga:
 	@for d in $(NUDA); do $(FACE) -C $$d purga; done
