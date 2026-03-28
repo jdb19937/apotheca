@@ -36,4 +36,11 @@ signa:
 	done
 	git tag $(TAG)
 
-.PHONY: omnia purga omnia_purga trahe firma para fige signa
+census:
+	@totum=0; for d in $(OMNIA); do \
+		n=$$(cd $$d && git ls-files | xargs cat 2>/dev/null | wc -l); \
+		printf "%-12s %6d\n" "$$d" "$$n"; \
+		totum=$$((totum + n)); \
+	done; printf "%-12s %6d\n" "TOTUM" "$$totum"
+
+.PHONY: omnia purga omnia_purga trahe firma para fige signa census
