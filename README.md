@@ -42,6 +42,14 @@ A terminal-based simulation where autonomous entities — cats, bears, daleks, c
 
 Built entirely on crispus for HTTPS and ison for JSON, because when you've already written those from scratch, you would be a fool not to use them.
 
+### phantasma — A Window, A Renderer, And Two Video Encoders Walk Into A Static Library
+
+A complete graphics library that gives you windowing, hardware-accelerated rendering, keyboard and mouse input, animated GIF encoding, and H.264 MP4 video encoding — all compiled into a single static library with absolutely zero external dependencies. Phantasma replaces SDL2, libx264, giflib, and the parts of ffmpeg you actually use, in one shot. No package managers. No dynamic linking. No configuration scripts. No development headers to hunt down.
+
+The windowing layer is native on both platforms — Cocoa with Core Graphics on macOS, Xlib on Linux — with identical behavior and an API so minimal the entire public interface fits in a single header. Create a window, push ARGB8888 pixel buffers, present the frame. The event model is poll-based, clean, and built for real-time interactive applications.
+
+The GIF encoder implements median-cut color quantization to 128 colors, Bayer 8×8 ordered dithering, and full LZW compression from scratch. The MP4 encoder generates valid H.264 Baseline with proper NAL unit packaging, correct SPS/PPS generation, and a complete ISO base media file container — every frame is an IDR, so you can seek to any point instantly. Both encoders take raw ARGB frames in and produce broadcast-quality output. Three function calls each.
+
 ### sqrt — Isometric Embedding Of The Flat Torus
 
 A mathematical visualization suite that computes and renders the Nash-Kuiper C1 isometric embedding of the flat torus into three-dimensional Euclidean space — the celebrated Hévéa torus. Multiple embedding methods (corrugated, iterated, spiral, normal), Phong illumination with Fresnel effects, an interactive SDL2 viewer with real-time rotation and recording, and a procedural starfield generator that populates toroidal skies with physically-typed stellar objects. Over 3,300 lines of C that turn differential geometry into pixels.

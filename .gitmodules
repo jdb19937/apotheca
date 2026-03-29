@@ -19,3 +19,6 @@
 [submodule "sqrt"]
 	path = sqrt
 	url = git@github.com:jdb19937/sqrt.git
+[submodule "phantasma"]
+	path = phantasma
+	url = git@github.com:/jdb19937/phantasma

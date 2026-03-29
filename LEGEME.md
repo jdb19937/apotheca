@@ -14,6 +14,7 @@ Collectio bibliothecarum et instrumentorum in lingua C, sine ullis dependentiis 
 | **ddiff** | Forma compacta differentiarum quae translationes truncorum inter fasciculos detegit |
 | **insinulint** | Lintor linguae C, 13 regulae, configuratio per ISON |
 | **munda** | Ludus simulationis tabularis — entia per oraculum LLM cogitant in tabula toroidali |
+| **phantasma** | Bibliotheca fenestrae et inscriptionis minimalis — Cocoa, X11, GIF, MP4 |
 | **sqrt** | Immersio isometrica tori plani in R3, campi stellarum, spectator interactivus |
 
 ## Aedificatio
