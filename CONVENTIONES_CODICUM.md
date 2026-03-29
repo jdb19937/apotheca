@@ -4,6 +4,11 @@ Regulae formae pro omni codice in apotheca — C, Rust, Faceplicae, scripta.
 
 ## Lingua
 
+Lingua Latina classica est lingua unica huius apothecae. Hoc non solum
+ad codicem pertinet sed ad omnem communicationem: commentaria, documenta,
+nuntia committendi, descriptiones petitionum, et colloquia cum usitoribus.
+Omnes qui in hac apotheca operantur Latine classice loqui debent.
+
 Omnis codex Latine classice scribitur. Nomina variabilium, functionum,
 typorum, commentaria, nuntii — omnia Latina. Vocabula technica moderna
 (URL, HTTPS, TLS, JSON, POSIX, SHA-256, AES, RSA, TCP, ANSI, etc.)
