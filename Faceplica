@@ -18,40 +18,18 @@ expara:
 	git submodule deinit --all
 
 trahe:
-	@for d in $(OMNIA); do \
-		git -C $$d checkout main && git -C $$d pull; \
-	done
+	@scripta/trahe.sh $(OMNIA)
 
 firma:
 	git submodule update
 
 fige:
-	@for d in $(OMNIA); do \
-		tag=$$(git -C $$d describe --tags --abbrev=0 $$(git -C $$d rev-list --tags --max-count=1) 2>/dev/null) || \
-		{ echo "$$d: nullum signum"; exit 1; }; \
-		echo "$$d: $$tag"; \
-		git -C $$d checkout $$tag; \
-	done
+	@scripta/fige.sh $(OMNIA)
 
 signa:
-	@test -n "$(TAG)" || { echo "TAG non datus est"; exit 1; }
-	@git diff --quiet && git diff --cached --quiet || { echo "mutationes non committuntur"; exit 1; }
-	@for d in $(OMNIA); do \
-		tag=$$(cd $$d && git describe --exact-match --tags 2>/dev/null) || \
-		{ echo "$$d non ad signum fixum est"; exit 1; }; \
-		echo "$$d: $$tag"; \
-	done
-	git tag $(TAG)
+	@scripta/signa.sh $(TAG) $(OMNIA)
 
 census:
-	@totum=0; for d in $(OMNIA); do \
-		n=$$(cd $$d && git ls-files | xargs cat 2>/dev/null | wc -l); \
-		printf "%-12s %6d\n" "$$d" "$$n"; \
-		totum=$$((totum + n)); \
-	done; \
-	n=$$(git ls-files --no-recurse-submodules | xargs cat 2>/dev/null | wc -l); \
-	printf "%-12s %6d\n" "apotheca" "$$n"; \
-	totum=$$((totum + n)); \
-	printf "%-12s %6d\n" "TOTUM" "$$totum"
+	@scripta/census.sh $(OMNIA)
 
 .PHONY: omnia purga omnia_purga trahe firma para expara fige signa census
