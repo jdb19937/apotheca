@@ -1,12 +1,10 @@
-NUDA = crispus ddiff face insinulint ison
-OMNIA = $(NUDA) munda
+OMNIA = crispus ddiff face ison insinulint munda
 
 omnia:
-	@for d in $(NUDA); do $(FACE) -C $$d omnia APOTHECA=$(CURDIR); done
+	@for d in $(OMNIA); do $(FACE) -C $$d omnia APOTHECA=$(CURDIR); done
 
 purga:
-	@for d in $(NUDA); do $(FACE) -C $$d purga APOTHECA=$(CURDIR); done
-	$(FACE) -C munda purga_omnia
+	@for d in $(OMNIA); do $(FACE) -C $$d purga APOTHECA=$(CURDIR); done
 
 para:
 	git submodule update --init --recursive
