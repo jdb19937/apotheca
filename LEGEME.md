@@ -14,6 +14,7 @@ Collectio bibliothecarum et instrumentorum in lingua C, sine ullis dependentiis 
 | **ddiff** | Forma compacta differentiarum quae translationes truncorum inter fasciculos detegit |
 | **insinulint** | Lintor linguae C, 13 regulae, configuratio per ISON |
 | **munda** | Ludus simulationis tabularis — entia per oraculum LLM cogitant in tabula toroidali |
+| **sqrt** | Immersio isometrica tori plani in R3, campi stellarum, spectator interactivus |
 
 ## Aedificatio
 
@@ -34,7 +35,7 @@ face signa TAG=II   # signa apothecam (solum si omnia ad tags sunt et nulla muta
 
 ## Dependentiae
 
-Nullae externae. Solum compilator C et POSIX. Munda pendet ab ison et crispus (ut submodula).
+Nullae externae. Solum compilator C et POSIX. Munda pendet ab ison et crispus (ut submodula). Insinulint et sqrt pendent ab ison (ut submodulum). Sqrt SDL2 requirit pro spectatore interactivo.
 
 ## Licentia
 

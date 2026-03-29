@@ -73,9 +73,13 @@ Sectiones "The Rust Port" semper communicant: translationem Rusticam completam e
 fidelem in `cancer/` exstare, nullas dependentias externas habere, et paritatem
 cum implementatione C servari.
 
-Sectiones "License" breves sunt. Una linea. Variatio verborum acceptabilis est
-("Free. Use however you like.", "Public domain.") sed numquam referentia ad
-plicam LICENSE externam.
+Sectio "License" semper eadem, verbatim:
+
+```
+## License
+
+Free. Public domain. Use however you like.
+```
 
 Caudices codicis linguam indicant: `bash` pro mandatis shell, `c` pro codice C,
 `json` pro ISON, `text` pro exitu vel formatis.
