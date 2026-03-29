@@ -12,8 +12,6 @@ purga:
 para:
 	git submodule update --init --recursive
 
-	$(CC) $(CFLAGS) -c $< -o $@
-
 expara:
 	git submodule deinit --all
 
