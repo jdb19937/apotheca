@@ -32,28 +32,46 @@ The Rust Port et License semper ultimae sectiones, hoc ordine.
 
 README.md Anglice scripta sunt — documenta venditoria. LEGEME.md documentationem
 veram continent; README.md exstant ut lectores Anglicos in GitHub attrahant,
-afficiant, persuadeant.
+afficiant, persuadeant. README.md documentum technicum non est — prosa
+venditoria est.
 
-Quisque submodulus vocem propriam habet. ddiff iactatione superbit. face
-orationem corporativam politam praebet. insinulint sarcasmo sicco arido utitur.
-ison auctoritatem technicam cum mensura ostendit. crispus se quasi productionis
-industrialis instrumentum ponit. munda brevis et technica est. Radix README
-declarativa et fidens est.
+### Tonus
 
-Hae voces intentionales sunt et servandae. Cum README editur, personalitatem
-exsistentem imitare — ne ad vocem uniformem complanaveris.
+Fidens, grandiloquens, superbus. README.md iactat, persuadet, afficit. Superlativa
+libere adhibenda sunt. Verbositas virtus est — sententiae longae, elaboratae,
+rhetoricae acceptantur et commendantur. Lectorem non informare sed convertere vis.
 
-Quamquam tonus variatur, omnes README.md qualitates communes habent:
-- Persuasivae sunt. Quaeque sectio valorem subiecti arguit.
-- Lectorem technice peritum sed cum subiecto ignotum praesumunt.
-- Nullas dependentias externas ut virtutem cardinalem iterum iterumque extollunt.
-- Numquam se excusant, dubitant, vel minorant. Fiducia fundamentum est.
-- Detaliis concretis utuntur (numeri versuum, nomina algorithmorum, suites
-  cryptographicae) potius quam assertionibus vagis.
+- **Superlativus.** "Best", "fastest", "most elegant" — haec verba non timenda sunt.
+  Si res bona est, dic eam optimam esse. Modestia in venditione vitium est.
+- **Verbosus.** Nulla brevitas necessaria. Expande, elabora, orna. Si sententia
+  rem bene dicit, adde alteram quae melius dicit. Prosa fluere debet, non
+  staccato procedere.
+- **Fidens sine dubitatione.** Numquam cave, minora, vel excusa. Non "simple but
+  effective", non "admittedly limited", non "for most use cases". Assertiones
+  absolutae. Fiducia totalis.
+- **Persuasivus.** Quaeque sectio valorem subiecti arguere debet. Nulla sectio
+  mere descriptiva — omnia vendunt.
+- **Comparativus.** Comparationes implicitae cum instrumentis notis efficaces sunt
+  ("Other projects depend on OpenSSL and hope for the best"). Numquam per nomen
+  reprehendere, sed semper ostendere cur hoc melius sit.
 
-Sectiones "The Rust Port" longitudine et enthusiasmo variant sed semper
-communicant: translationem Rusticam completam et fidelem in `cancer/` exstare,
-nullas dependentias externas habere, et paritatem cum implementatione C servari.
+### Principia venditoria
+
+- Nullas dependentias externas ut virtutem cardinalem ubique extollere.
+- Lectorem technice peritum sed cum subiecto ignotum praesumere.
+- Detalia concreta (numeri versuum, nomina algorithmorum, suites cryptographicae)
+  persuadent magis quam assertiones vagae — superlativa concretis fulcire.
+- Numquam se excusare, dubitare, vel minorare.
+- Numquam linguam Latinam memorare, explicare, vel iustificare. Ne dicas cur
+  codex Latine scriptus est. Ne dicas codicem Latine scriptum esse. Nomina
+  Latina functionum et variabilium tractanda sunt ut nomina quaelibet —
+  sine commentario, sine explicatione, sine curiositate.
+
+### Sectiones constantes
+
+Sectiones "The Rust Port" semper communicant: translationem Rusticam completam et
+fidelem in `cancer/` exstare, nullas dependentias externas habere, et paritatem
+cum implementatione C servari.
 
 Sectiones "License" breves sunt. Una linea. Variatio verborum acceptabilis est
 ("Free. Use however you like.", "Public domain.") sed numquam referentia ad
