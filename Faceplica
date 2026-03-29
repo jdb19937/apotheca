@@ -15,7 +15,7 @@ para:
 	$(CC) $(CFLAGS) -c $< -o $@
 
 expara:
-	git submodule deinit
+	git submodule deinit --all
 
 trahe:
 	@for d in $(OMNIA); do \
