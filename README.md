@@ -36,7 +36,7 @@ A terminal-based simulation where autonomous agents — cats, bears, daleks, cro
 
 ## Building
 
-```
+```bash
 face para
 face omnia
 ```
