@@ -16,3 +16,6 @@
 [submodule "insinulint"]
 	path = insinulint
 	url = git@github.com:jdb19937/insinulint.git
+[submodule "sqrt"]
+	path = sqrt
+	url = git@github.com:jdb19937/sqrt.git
