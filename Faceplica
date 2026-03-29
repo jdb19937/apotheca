@@ -12,6 +12,11 @@ purga:
 para:
 	git submodule update --init --recursive
 
+	$(CC) $(CFLAGS) -c $< -o $@
+
+expara:
+	git submodule deinit
+
 trahe:
 	@for d in $(OMNIA); do \
 		git -C $$d checkout main && git -C $$d pull; \
@@ -49,4 +54,4 @@ census:
 	totum=$$((totum + n)); \
 	printf "%-12s %6d\n" "TOTUM" "$$totum"
 
-.PHONY: omnia purga omnia_purga trahe firma para fige signa census
+.PHONY: omnia purga omnia_purga trahe firma para expara fige signa census
