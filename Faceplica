@@ -7,7 +7,7 @@ purga:
 	@for d in $(OMNIA); do $(FACE) -C $$d purga APOTHECA=$(CURDIR); done
 
 para:
-	git submodule update --init --recursive
+	git submodule update --init
 
 expara:
 	git submodule deinit --all
