@@ -22,3 +22,6 @@
 [submodule "phantasma"]
 	path = phantasma
 	url = git@github.com:/jdb19937/phantasma
+[submodule "sic"]
+	path = sic
+	url = git@github.com:/jdb19937/sic
