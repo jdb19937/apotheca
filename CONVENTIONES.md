@@ -1,10 +1,13 @@
-# Conventiones Codicum
+# Conventiones
 
-Regulae formae pro omni codice in apotheca — C, Rust, Faceplicae, scripta.
+Regulae formae pro omni codice et documentatione in apotheca — C, Rust,
+Faceplicae, scripta, LEGEME.md, README.md.
 
 ## Lingua
 
-Lingua Latina classica est lingua unica huius apothecae. Hoc non solum
+Lingua Latina classica est lingua unica huius apothecae — non Latina
+ecclesiastica, non Latina mediaevalis, sed lingua Caesaris et Ciceronis
+quantum fieri potest aptata ad res technicas modernas. Hoc non solum
 ad codicem pertinet sed ad omnem communicationem: commentaria, documenta,
 nuntia committendi, descriptiones petitionum, et colloquia cum usitoribus.
 Omnes qui in hac apotheca operantur Latine classice loqui debent.
@@ -12,7 +15,14 @@ Omnes qui in hac apotheca operantur Latine classice loqui debent.
 Omnis codex Latine classice scribitur. Nomina variabilium, functionum,
 typorum, commentaria, nuntii — omnia Latina. Vocabula technica moderna
 (URL, HTTPS, TLS, JSON, POSIX, SHA-256, AES, RSA, TCP, ANSI, etc.)
-immutata retinentur.
+immutata retinentur — non Latinizantur. Nomina functionum, variabilium,
+mandatorum computatralium in formam originalem manent, saepe in codice
+monospatio (`` ` ``).
+
+Ubi vocabulum Latinum aptum adest, adhibetur: "plica" pro "file", "caudex"
+pro "block", "aedificatio" pro "build", "proba" pro "test". Ubi nullum
+vocabulum Latinum aptum adest vel ambiguitas oritur, vocabulum technicum
+retinetur.
 
 ## Nomina
 
@@ -278,7 +288,7 @@ apotheca/
     Faceplica              # aedificatio radicis
     LEGEME.md              # documentatio Latina
     README.md              # documentatio Anglica (venditoria)
-    CONVENTIONES_*.md      # regulae formae
+    CONVENTIONES.md        # regulae formae
     .gitmodules
     scripta/               # scripta auxiliaria (.sh)
 ```
@@ -486,3 +496,157 @@ census         # numeratio linearum
 | retis | systema communicationis inter processus |
 | mandatum | imperium quod usitor vel systema exsequendum dat |
 | scopus | res quae aedificanda est — plica vel executabile destinatum |
+
+---
+
+## Conventiones LEGEME.md
+
+Regulae formae pro omnibus pliculis LEGEME.md in apotheca. LEGEME.md
+documentationem veram continent — technicas, directas, Latinas.
+
+### Structura
+
+1. Titulus `#` cum nomine subiecti
+2. Paragraphus descriptionis (una vel duae sententiae)
+3. Nota blockquote: `> **Nota:** README.md ignorandum est. Anglice scriptum est ad barbaros ineruditos pecunia emungendos.`
+4. Sectiones `##` ordine logico
+
+### Ordo sectionum commendatus
+
+- Aedificatio
+- Usus
+- (Sectiones specificae subiecti)
+- Cancer (si adest)
+- Dependentiae (si adest)
+- Licentia (si adest)
+
+### Forma
+
+- Caudices codicis semper sepiti cum `` ``` `` (numquam indentati)
+- Caudices nudi — sine lingua post `` ``` ``
+- Separatores tabularum minimi: `|---|---|`
+- Linea vacua ante et post elementa truncalia (tabulae, caudices, capita)
+- Hierarchia capitum: `#` > `##` > `###`, sine saltu
+- Nullae spatia terminalia
+
+### Glossarium LEGEME
+
+Vocabula canonica quae in omnibus LEGEME.md adhibenda sunt:
+
+| Vocabulum canonicum | Non scribas | Significatio |
+|---|---|---|
+| Aedificatio | ~~Compilatio~~ | Sectio de aedificando |
+| Rustica | ~~Rusta~~ | Adiectivum linguae Rust (femininum ad "translatio") |
+| Cancer | ~~cancer~~ | Sectio de translatione Rustica (semper maiuscula) |
+| dependentiae externae | — | Formulae: "sine ullis dependentiis externis" vel "nullae dependentiae externae" |
+| purga | ~~mundum~~ | Mandatum ad purgandum (ubi `face` vel `make` adhibetur) |
+| Plicae | ~~Fasciculi~~ | Sectio enumerans plicas fontis |
+| Probationes | — | Sectio de probationibus (non "Tests") |
+
+### Stilus LEGEME
+
+Tonus est directus, siccus, practicus. Nulla iactatoria, nulla venditio, nullus
+humor. Descriptiones breves et accuratae. Sententiae simplices praeferuntur;
+periodi longae et complexae vitandae. Documentatio technica est, non prosa
+litteraria.
+
+Sectiones repetitae (Nota, Cancer) verbatim inter plicas congruere debent.
+Sectiones specificae subiecti libere scribi possunt, sed eodem tono sicco et
+directo.
+
+Exempla boni stili:
+- "Nullae dependentiae externae. Solum compilator C et `make`."
+- "Translatio Rustica in `cancer/` iacet. Non curatur."
+- "Configuratio per plicam ISON. Omnes campi optionales sunt — defalta supplentur."
+
+Exempla mali stili:
+- Superlativa venditoria ("optima", "velocissima", "sine pari")
+- Explicationes longae ubi sententia brevis sufficit
+- Anglicismi ubi vocabulum Latinum commune adest
+
+---
+
+## Conventiones README.md
+
+Regulae formae pro omnibus pliculis README.md in apotheca. README.md Anglice
+scripta sunt ad barbaros ineruditos pecunia emungendos. Tonus pro quoque
+submodulo variare potest. Structura congruere debet.
+
+### Structura README
+
+1. Titulus `#` cum nomine subiecti
+2. Descriptio introductoria
+3. Sectiones specificae subiecti (tonus liber)
+4. `## The Rust Port` (si `cancer/` adest)
+5. `## License`
+
+The Rust Port et License semper ultimae sectiones, hoc ordine.
+
+### Forma README
+
+- Capita Title Case: `## Getting Started`, non `## Getting started`
+- Caudices semper cum lingua: `` ```bash ``, `` ```c ``, `` ```json ``, `` ```text ``
+- Separatores tabularum minimi: `|---|---|`
+
+### Glossarium README
+
+| Vocabulum canonicum | Non scribas |
+|---|---|
+| The Rust Port | ~~Rust Implementation~~, ~~cancer — ...~~ |
+| License | Semper praesens. Textus liber, sed non "See LICENSE for details." |
+
+### Stilus README
+
+README.md Anglice scripta sunt — documenta venditoria. LEGEME.md documentationem
+veram continent; README.md exstant ut lectores Anglicos in GitHub attrahant,
+afficiant, persuadeant. README.md documentum technicum non est — prosa
+venditoria est.
+
+#### Tonus
+
+Fidens, grandiloquens, superbus. README.md iactat, persuadet, afficit. Superlativa
+libere adhibenda sunt. Verbositas virtus est — sententiae longae, elaboratae,
+rhetoricae acceptantur et commendantur. Lectorem non informare sed convertere vis.
+
+- **Superlativus.** "Best", "fastest", "most elegant" — haec verba non timenda sunt.
+  Si res bona est, dic eam optimam esse. Modestia in venditione vitium est.
+- **Verbosus.** Nulla brevitas necessaria. Expande, elabora, orna. Si sententia
+  rem bene dicit, adde alteram quae melius dicit. Prosa fluere debet, non
+  staccato procedere.
+- **Fidens sine dubitatione.** Numquam cave, minora, vel excusa. Non "simple but
+  effective", non "admittedly limited", non "for most use cases". Assertiones
+  absolutae. Fiducia totalis.
+- **Persuasivus.** Quaeque sectio valorem subiecti arguere debet. Nulla sectio
+  mere descriptiva — omnia vendunt.
+- **Comparativus.** Comparationes implicitae cum instrumentis notis efficaces sunt
+  ("Other projects depend on OpenSSL and hope for the best"). Numquam per nomen
+  reprehendere, sed semper ostendere cur hoc melius sit.
+
+#### Principia venditoria
+
+- Nullas dependentias externas ut virtutem cardinalem ubique extollere.
+- Lectorem technice peritum sed cum subiecto ignotum praesumere.
+- Detalia concreta (numeri versuum, nomina algorithmorum, suites cryptographicae)
+  persuadent magis quam assertiones vagae — superlativa concretis fulcire.
+- Numquam se excusare, dubitare, vel minorare.
+- Numquam linguam Latinam memorare, explicare, vel iustificare. Ne dicas cur
+  codex Latine scriptus est. Ne dicas codicem Latine scriptum esse. Nomina
+  Latina functionum et variabilium tractanda sunt ut nomina quaelibet —
+  sine commentario, sine explicatione, sine curiositate.
+
+#### Sectiones constantes
+
+Sectiones "The Rust Port" semper communicant: translationem Rusticam completam et
+fidelem in `cancer/` exstare, nullas dependentias externas habere, et paritatem
+cum implementatione C servari.
+
+Sectio "License" semper eadem, verbatim:
+
+```
+## License
+
+Free. Public domain. Use however you like.
+```
+
+Caudices codicis linguam indicant: `bash` pro mandatis shell, `c` pro codice C,
+`json` pro ISON, `text` pro exitu vel formatis.
