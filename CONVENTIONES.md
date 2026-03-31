@@ -414,6 +414,34 @@ Codex C in `face/` tabulis indentat. Omnis alius codex (C, Rust, scripta)
 quattuor spatiis indentat. Faceplicae ipsae tabulis indentant, ut `face`
 requirit.
 
+### Continuatio
+
+Expressiones quae plures lineas occupant stilum **patens** sequuntur:
+`(` ultimum signum in linea; contentum uno gradu a basi indentatum;
+`)` primum signum in linea propria.
+
+```
+functio(
+    primus,
+    secundus,
+    tertius
+);
+```
+
+## Colineatio
+
+In grege linearum consecutivarum eiusdem structurae, signum principale
+ad columnam maximam naturalem gregis allineatur. Columna naturalis lineae
+est finis partis sinistrae + spatium minimum (1 pro operatoribus). Linea
+latissima spatium minimum accipit; ceterae paduntur.
+
+```
+int x     = 1;
+int longa = 2;
+```
+
+Greges qui nimis discordant (dispersio > 8 columnas) non colineantur.
+
 ## Formatio
 
 Bracchia circa corpus unius sententiae non requiruntur:
