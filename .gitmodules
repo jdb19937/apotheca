@@ -21,10 +21,10 @@
 	url = git@github.com:jdb19937/sqrt.git
 [submodule "phantasma"]
 	path = phantasma
-	url = git@github.com:/jdb19937/phantasma
+	url = git@github.com:jdb19937/phantasma.git
 [submodule "sic"]
 	path = sic
-	url = git@github.com:/jdb19937/sic
+	url = git@github.com:jdb19937/sic.git
 [submodule "delphi"]
 	path = delphi
-	url = git@github.com:/jdb19937/delphi
+	url = git@github.com:jdb19937/delphi.git
