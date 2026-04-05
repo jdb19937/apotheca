@@ -25,3 +25,6 @@
 [submodule "sic"]
 	path = sic
 	url = git@github.com:/jdb19937/sic
+[submodule "delphi"]
+	path = delphi
+	url = git@github.com:/jdb19937/delphi
