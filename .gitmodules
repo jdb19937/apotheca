@@ -28,3 +28,6 @@
 [submodule "delphi"]
 	path = delphi
 	url = git@github.com:jdb19937/delphi.git
+[submodule "kadc"]
+	path = kadc
+	url = git@github.com:jdb19937/kadc.git
