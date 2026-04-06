@@ -1,4 +1,4 @@
-OMNIA = crispus ddiff face ison insinulint munda phantasma sqrt sic delphi
+OMNIA = crispus ddiff face ison insinulint munda phantasma sqrt sic delphi kadc
 
 omnia:
 	@for d in $(OMNIA); do $(FACE) -C $$d omnia APOTHECA=$(CURDIR); done
