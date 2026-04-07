@@ -1,10 +1,13 @@
-OMNIA = crispus ddiff face ison insinulint munda phantasma sqrt sic delphi kadc
+OMNIA = face ison ddiff sic crispus insinulint phantasma munda sqrt delphi kadc
 
 omnia:
-	@for d in $(OMNIA); do $(FACE) -C $$d omnia APOTHECA=$(CURDIR); done
+	@for d in $(OMNIA); do $(FACE) -C $$d omnia; done
+
+colloca:
+	@for d in $(OMNIA); do $(FACE) -C $$d colloca; done
 
 purga:
-	@for d in $(OMNIA); do $(FACE) -C $$d purga APOTHECA=$(CURDIR); done
+	@for d in $(OMNIA); do $(FACE) -C $$d purga; done
 
 para:
 	git submodule update --init
@@ -27,4 +30,4 @@ signa:
 census:
 	@scripta/census.sh $(OMNIA)
 
-.PHONY: omnia purga omnia_purga trahe firma para expara fige signa census
+.PHONY: omnia colloca purga omnia_purga trahe firma para expara fige signa census
