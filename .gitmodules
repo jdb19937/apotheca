@@ -31,3 +31,6 @@
 [submodule "kadc"]
 	path = kadc
 	url = git@github.com:jdb19937/kadc.git
+[submodule "xiterm"]
+	path = xiterm
+	url = git@github.com:jdb19937/xiterm
