@@ -1,4 +1,4 @@
-OMNIA = face ison ddiff sic crispus insinulint phantasma munda sqrt delphi kadc xiterm vii
+OMNIA = face ison ddiff sic crispus insinulint phantasma munda sqrt delphi kadc xiterm vii ccc
 
 omnia:
 	@for d in $(OMNIA); do $(FACE) -C $$d omnia; done
