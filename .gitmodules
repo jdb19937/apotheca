@@ -34,3 +34,6 @@
 [submodule "xiterm"]
 	path = xiterm
 	url = git@github.com:jdb19937/xiterm
+[submodule "vii"]
+	path = vii
+	url = git@github.com:jdb19937/vii
