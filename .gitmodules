@@ -40,3 +40,6 @@
 [submodule "ccc"]
 	path = ccc
 	url = git@github.com:jdb19937/ccc
+[submodule "festum"]
+	path = festum
+	url = git@github.com:jdb19937/festum
