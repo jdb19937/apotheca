@@ -43,3 +43,6 @@
 [submodule "festum"]
 	path = festum
 	url = git@github.com:jdb19937/festum
+[submodule "corpus"]
+	path = corpus
+	url = git@github.com:jdb19937/corpus
