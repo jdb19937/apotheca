@@ -46,3 +46,6 @@
 [submodule "corpus"]
 	path = corpus
 	url = git@github.com:jdb19937/corpus
+[submodule "plus"]
+	path = plus
+	url = git@github.com:jdb19937/plus
