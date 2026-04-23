@@ -6,6 +6,9 @@ omnia:
 colloca:
 	@for d in $(OMNIA); do $(FACE) -C $$d colloca; done
 
+decolloca:
+	rm -rf /opt/apotheca
+
 purga:
 	@for d in $(OMNIA); do $(FACE) -C $$d purga; done
 
@@ -30,4 +33,4 @@ signa:
 census:
 	@scripta/census.sh $(OMNIA)
 
-.PHONY: omnia colloca purga omnia_purga trahe firma para expara fige signa census
+.PHONY: omnia colloca purga omnia_purga trahe firma para expara fige signa census decolloca
