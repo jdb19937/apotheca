@@ -52,3 +52,6 @@
 [submodule "homuncio"]
 	path = homuncio
 	url = git@github.com:jdb19937/homuncio
+[submodule "proplasma"]
+	path = proplasma
+	url = git@github.com:jdb19937/proplasma
