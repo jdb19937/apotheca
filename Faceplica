@@ -31,6 +31,6 @@ signa:
 	@scripta/signa.sh $(TAG) $(OMNIA)
 
 census:
-	@scripta/census.sh $(OMNIA)
+	@scripta/census.py $(OMNIA)
 
 .PHONY: omnia colloca purga omnia_purga trahe firma para expara fige signa census decolloca
