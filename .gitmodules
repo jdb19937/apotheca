@@ -55,6 +55,3 @@
 [submodule "proplasma"]
 	path = proplasma
 	url = git@github.com:jdb19937/proplasma
-[submodule "solutus"]
-	path = solutus
-	url = git@github.com:jdb19937/solutus
